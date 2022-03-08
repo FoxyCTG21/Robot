@@ -25,7 +25,7 @@
 #define ledChannel_d 1
 
 //////////////////////////// Variable le velocidad PWM
-uint8_t dutyCycle = 50;
+uint8_t dutyCycle = 150;
 
 uint8_t movimiento = 0;
 
@@ -88,19 +88,19 @@ void loop()
 
     if (GamePad.isSquarePressed())
     {
-        dutyCycle = 10;
+        dutyCycle = 50;
     }
     else if (GamePad.isCirclePressed())
     {
-        dutyCycle = 50;
+        dutyCycle = 150;
     }
     else if (GamePad.isCrossPressed())
     {
-        dutyCycle = 150;
+        dutyCycle = 200;
     }
     else if (GamePad.isTrianglePressed())
     {
-        dutyCycle = 200;
+        dutyCycle = 250;
     }
 
     switch (movimiento)
